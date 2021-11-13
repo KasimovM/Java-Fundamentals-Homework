@@ -3,11 +3,11 @@ package gmail.mrkvkrvch;
 public class DeterminationOfPunishment {
 
     public static void main (String[] args) {
-        Citizens john = new Citizens("John", 26);
-        Citizens.CitizensProfile forJohn = new Citizens.CitizensProfile(10, true);
-        Citizens mark = new Citizens("Mark", 18);
-        Citizens.CitizensProfile forMark = new Citizens.CitizensProfile(6, false);
-        Citizens.CitizensProfile.goToJail(forJohn, john);
-        Citizens.CitizensProfile.goToJail(forMark, mark);
+        Citizen john = new Citizen("John", 26);
+        Citizen.CitizensProfile forJohn = new Citizen.CitizensProfile(10, true);
+        Citizen mark = new Citizen("Mark", 18);
+        Citizen.CitizensProfile forMark = new Citizen.CitizensProfile(6, false);
+        Citizen.CitizensProfile.goToJail(forJohn, john);
+        Citizen.CitizensProfile.goToJail(forMark, mark);
     }
 }
