@@ -7,6 +7,7 @@ public class DeterminationOfPunishment {
         Citizens.CitizensProfile forJohn = new Citizens.CitizensProfile(10, true);
         Citizens mark = new Citizens("Mark", 18);
         Citizens.CitizensProfile forMark = new Citizens.CitizensProfile(6, false);
-
+        Citizens.CitizensProfile.goToJail(forJohn, john);
+        Citizens.CitizensProfile.goToJail(forMark, mark);
     }
 }

@@ -4,7 +4,6 @@ public class Citizens {
 
     private String citizenName;
     private int age;
-    private CitizensProfile citizensProfile;
 
     public Citizens (String citizenName, int age) {
         this.citizenName = citizenName;
@@ -37,5 +36,15 @@ public class Citizens {
             this.citizenship = citizenship;
         }
 
+        public static String goToJail (CitizensProfile citizensProfile, Citizens citizens) {
+            if (citizensProfile.penalties > 5 & !citizensProfile.citizenship) {
+                System.out.println("Неуважаемый НЕгражданин" + " " + citizens.citizenName + "," + " " + "вы изгнаны из " +
+                        "нашего государства навеки!");
+            } else {
+                System.out.println(citizens.citizenName + "," + " " + "за ваши преступления вам придется оплатить штраф " +
+                        "в казну!");
+            }
+            return null;
+        }
     }
 }
