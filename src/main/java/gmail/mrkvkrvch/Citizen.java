@@ -36,7 +36,7 @@ public class Citizen {
             this.isHaveCitizenship = isHaveCitizenship;
         }
 
-        public static String goToJail (CitizensProfile citizensProfile, Citizen citizens) {
+        public static void goToJail (CitizensProfile citizensProfile, Citizen citizens) {
             if (citizensProfile.penalties > 5 & !citizensProfile.isHaveCitizenship) {
                 System.out.println("Неуважаемый НЕгражданин" + " " + citizens.name + "," + " " + "вы изгнаны из " +
                         "нашего государства навеки!");
@@ -44,7 +44,6 @@ public class Citizen {
                 System.out.println(citizens.name + "," + " " + "за ваши преступления вам придется оплатить штраф " +
                         "в казну!");
             }
-            return null;
         }
     }
 }
