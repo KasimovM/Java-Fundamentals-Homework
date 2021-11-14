@@ -29,15 +29,15 @@ public class Citizen {
     static class CitizensProfile {
 
         int penalties;
-        boolean citizenship;
+        boolean isHaveCitizenship;
 
-        public CitizensProfile (int penalties, boolean citizenship) {
+        public CitizensProfile (int penalties, boolean isHaveCitizenship) {
             this.penalties = penalties;
-            this.citizenship = citizenship;
+            this.isHaveCitizenship = isHaveCitizenship;
         }
 
         public static String goToJail (CitizensProfile citizensProfile, Citizen citizens) {
-            if (citizensProfile.penalties > 5 & !citizensProfile.citizenship) {
+            if (citizensProfile.penalties > 5 & !citizensProfile.isHaveCitizenship) {
                 System.out.println("Неуважаемый НЕгражданин" + " " + citizens.name + "," + " " + "вы изгнаны из " +
                         "нашего государства навеки!");
             } else {
